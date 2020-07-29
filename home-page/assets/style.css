@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+}
+
+
+.food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 5px;
+    width: 942px;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+header h2 {
+    text-align: center;
+}
+
+.cart {
+    position: relative;
+    float: right;
+    width: 491px;
+    height: 106px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+/* Main */
+
+.container {
+    display: flex;
+}
+
+.dropdown-list {
+    padding: 25px;
+    width: 40px;
+    height: 40px;
+}
+
+.dropdown-menu {
+    width: 109px;
+    height: 938px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.list-menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 893px;
+    height: 922px;
+    background: rgba(190, 195, 202, 0.3);
+    box-sizing: border-box;
+}
+
+
+/* List menu */
+
+
+.list-item {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.list-item .menu-item {
+    width: 250px;
+    height: 200px;
+    left: 138px;
+    top: 127px;
+}
+
+/* Cart */
+
+.cart-item {
+    width: 490px;
+    height: 932px;
+    left: 999px;
+    top: 6px;
+    background: #FFFFFF;
+    /* border: 1px solid #CECECE; */
+    border: 1px solid black;
+}
+.cart-img {
+    border: 1px solid black;
+}
+
+.empty {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+h3 {text-align: center;}
+
+
+
+
+
+/* Responsive */
+/* Extra small devices (portrait phones, less than 576px) */
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
