@@ -98,7 +98,6 @@ main {
     flex-direction: row;
     align-items: center;
     margin: 20px;
-    border: 1px solid black;
 }
 
 .item-name {
@@ -106,25 +105,34 @@ main {
 }
 
 .add-item {
+    width: 240px;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.add-btn {
-    margin: 10px;
+    justify-content: space-between;
 }
 
 
+.total {
+    display: flex;
+    margin-top: 170px;
+    padding: 0 25px 0;
+    justify-content: space-between;
+}
+
+.ppn {
+    margin-left: 25px;
+    padding: 0;
+}
 .checkout-btn {
-    margin: 30px 20px 20px;
+    margin: 0px 20px 20px;
     text-align: center;
     color: white;
     background: #57CAD5;
 }
 
 .cancel-btn {
-    margin: 20px;
+    margin: 0 20px 0;
     text-align: center;
     color: white;
     background: #F24F8A;
