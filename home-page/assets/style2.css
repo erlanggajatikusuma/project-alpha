@@ -107,8 +107,9 @@ main {
     margin-top: -90px;
 }
 
-.empty-img h4 {
+.empty-img p {
     margin-top: -15px;
+    font-size: 15px;
     color: #CECECE;
 }
 
