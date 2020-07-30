@@ -25,10 +25,10 @@ header h2 {
 }
 
 .cart {
-    position: relative;
     float: right;
-    width: 491px;
-    height: 106px;
+    margin-top: 5px;
+    width: 415px;
+    height: 100px;
     background: #FFFFFF;
     box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
 }
@@ -41,12 +41,11 @@ header h2 {
 
 .dropdown-list {
     padding: 25px;
-    width: 40px;
-    height: 40px;
+    width: 40%;
 }
 
 .dropdown-menu {
-    width: 109px;
+    width: 100px;
     height: 938px;
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -66,24 +65,22 @@ header h2 {
 
 
 .list-item {
+
+    flex-direction: row;
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 27px;
 }
 
 .list-item .menu-item {
     width: 250px;
     height: 200px;
-    left: 138px;
-    top: 127px;
 }
 
 /* Cart */
 
 .cart-item {
-    width: 490px;
+    width: 410px;
     height: 932px;
-    left: 999px;
-    top: 6px;
     background: #FFFFFF;
     /* border: 1px solid #CECECE; */
     border: 1px solid black;
@@ -110,16 +107,13 @@ h3 {text-align: center;}
 
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { ... }
+@media (max-width: 576px) {
+    .cart {
+        width: 100%;
+    }
 
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-
-
+    .list-item {
+        width: 100%;
+        flex-direction: column;
+    }
 }
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
