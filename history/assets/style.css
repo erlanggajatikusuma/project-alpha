@@ -191,7 +191,7 @@ main {
 /* Tengah */
 
 .revenue {
-    border: 1px solid darkblue;
+    /* border: 1px solid darkblue; */
     width: 1168px;
     height: 422px;
     background: #FFFFFF;
@@ -199,12 +199,20 @@ main {
     border-radius: 10px;
     margin: 45px;
 }
+.rev-head {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 
 /* Bawah */
 
-.order {
-    border: 1px solid yellowgreen;
+.recent-order {
+    /* border: 1px solid yellowgreen; */
     width: 1168px;
     height: 230px;
     background: #FFFFFF;
@@ -214,4 +222,49 @@ main {
     margin-right: 45px;
 }
 
+.recent-head {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* dropdown revenue & recent order */
+.drop-down {
+    /* border: 1px solid cyan; */
+    width: 90px;
+    height: 25px;
+    background: #CECECE;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    line-height: 25px;
+}
+
+.recent-title {
+    /* border: 1px solid green; */
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 30px;
+    line-height: 30px;
+}
+
+img.line {
+    width: 1168px;
+}
+
+.recent-info {
+    /* border: 1px solid red; */
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    color: #CECECE;
+}
 
