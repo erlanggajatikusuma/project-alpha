@@ -1,3 +1,8 @@
+* {
+    font-size: 12px;
+    line-height: 2;
+ }
+
 html, body {
     margin: 0;
 }
@@ -74,14 +79,15 @@ main {
     background: linear-gradient(285.38deg, #FBB2B4 30.05%, rgba(255, 143, 178, 0) 133.19%);
     filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));
     border-radius: 10px;
+    padding: 35px;
 }
 .income-content, .orders-content, .year-content {
     padding: 30px;
 }
 .ellipse {
     position: relative;
-    top: -150px;
-    left: 190px;
+    top: -125px;
+    left: 150px;
     width: 100px;
     height: 100px;
     background: rgba(253, 211, 228, 0.3);
@@ -90,8 +96,8 @@ main {
 }
 .ellipse-2 {
     position: relative;
-    top: -280px;
-    left: 230px;
+    top: -255px;
+    left: 190px;
     width: 100px;
     height: 100px;
     background: rgba(253, 211, 228, 0.3);
@@ -100,8 +106,8 @@ main {
 }
 .ellipse-3 {
     position: relative;
-    top: -400px;
-    left: 265px;
+    top: -375px;
+    left: 225px;
     width: 100px;
     height: 100px;
     background: rgba(253, 211, 228, 0.3);
@@ -111,8 +117,8 @@ main {
 
 .ellipse-4 {
     position: relative;
-    top: -150px;
-    left: 190px;
+    top: -125px;
+    left: 150px;
     width: 100px;
     height: 100px;
     background: rgba(207, 246, 253, 0.3);
@@ -121,8 +127,8 @@ main {
 }
 .ellipse-5 {
     position: relative;
-    top: -280px;
-    left: 230px;
+    top: -255px;
+    left: 190px;
     width: 100px;
     height: 100px;
     background: rgba(207, 246, 253, 0.3);
@@ -131,8 +137,8 @@ main {
 }
 .ellipse-6 {
     position: relative;
-    top: -400px;
-    left: 265px;
+    top: -375px;
+    left: 225px;
     width: 100px;
     height: 100px;
     background: rgba(207, 246, 253, 0.3);
@@ -142,8 +148,8 @@ main {
 
 .ellipse-7 {
     position: relative;
-    top: -150px;
-    left: 190px;
+    top: -125px;
+    left: 150px;
     width: 100px;
     height: 100px;
     background: rgba(207, 246, 253, 0.3);
@@ -152,8 +158,8 @@ main {
 }
 .ellipse-8 {
     position: relative;
-    top: -280px;
-    left: 230px;
+    top: -255px;
+    left: 190px;
     width: 100px;
     height: 100px;
     background: rgba(207, 246, 253, 0.3);
@@ -162,8 +168,8 @@ main {
 }
 .ellipse-9 {
     position: relative;
-    top: -400px;
-    left: 265px;
+    top: -375px;
+    left: 225px;
     width: 100px;
     height: 100px;
     background: rgba(207, 246, 253, 0.3);
@@ -178,6 +184,7 @@ main {
     background: linear-gradient(285.38deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
     filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));
     border-radius: 10px;
+    padding: 35px;
 }
 
 .year-income {
@@ -186,12 +193,12 @@ main {
     background: linear-gradient(285.38deg, #AB84C8 30.05%, rgba(241, 201, 236, 0) 133.19%);
     filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
     border-radius: 10px;
+    padding: 35px;
 }
 
 /* Tengah */
 
 .revenue {
-    /* border: 1px solid darkblue; */
     width: 1168px;
     height: 422px;
     background: #FFFFFF;
@@ -200,7 +207,6 @@ main {
     margin: 45px;
 }
 .rev-head {
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
@@ -212,26 +218,23 @@ main {
 /* Bawah */
 
 .recent-order {
-    /* border: 1px solid yellowgreen; */
     width: 1168px;
     height: 230px;
     background: #FFFFFF;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding: 20px;
     margin-left: 45px;
     margin-right: 45px;
 }
 
 .recent-head {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
 }
+
 /* dropdown revenue & recent order */
 .drop-down {
-    /* border: 1px solid cyan; */
     width: 90px;
     height: 25px;
     background: #CECECE;
@@ -241,30 +244,5 @@ main {
     line-height: 25px;
 }
 
-.recent-title {
-    /* border: 1px solid green; */
-    width: 1030px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 25px;
-    margin-right: 25px;
-    height: 30px;
-    line-height: 30px;
-}
 
-img.line {
-    width: 1168px;
-}
-
-.recent-info {
-    /* border: 1px solid red; */
-    width: 1030px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 25px;
-    margin-right: 25px;
-    font-size: 15px;
-    letter-spacing: 0.1em;
-    color: #CECECE;
-}
 
