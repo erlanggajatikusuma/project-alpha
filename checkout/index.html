@@ -15,7 +15,7 @@
   <body>
 
     <header>
-        <div class="banner">
+        <div class="d-flex justify-content-between banner">
             <div class="menu-img">
                 <img src="assets/img/menu (1).png">
             </div>
@@ -25,7 +25,7 @@
             </div>
         </div>
     
-        <div class="cart">
+        <div class="d-flex justify-content-center cart">
             <h3>Cart</h3>
             <p>3</p>
         </div>
@@ -156,7 +156,6 @@
             </div>
     
             <div class="checkout-btn" data-toggle="modal" data-target="#exampleModal">
-                <!-- <button data-toggle="modal" data-target="#exampleModal"></button> -->
                 <h4>Checkout</h4>
             </div>
             <div class="cancel-btn">
@@ -173,15 +172,20 @@
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <!-- <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
+          </div> -->
         <div class="modal-body">
-        
-          <div class="row">
+            <div class="d-flex justify-content-between check-title">
+                <h5>Checkout</h5>
+                <h6>Receipt no: #010410919</h6>
+            </div>
+            <h6>Cashier : Pevita Pearce</h6>
+          <div class="row mt-5">
             <div class="col-md-9 ml-auto">
                 <h6>Coffe Latte 1x</h6>
                 <h6>Black Forest 1x</h6>
@@ -195,13 +199,19 @@
                 <h6>Rp. 10.500</h6>
             </div>
 
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <h6>Total : Rp. 115.500</h6>
+            </div>
+            <h6 class="m-3">Payment : Cash</h6>
+            
           </div>
 
         </div>
         <div class="modal-footer">
             <div class="footer-btn">
                 <button type="button" class="btn btn-primary">Print</button>
-                <p>Or</p>
+                <p class="h6">Or</p>
                 <button type="button" class="btn btn-secondary">Send Email</button>
                 <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
             </div>
