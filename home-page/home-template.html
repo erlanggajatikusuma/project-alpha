@@ -38,7 +38,7 @@
                                 </a>
                             </div>
                             <div class="p-3 img-drop">
-                                <a href="#">
+                                <a href="#" data-toggle="modal" data-target="#addItem">
                                     <img src="assets/img/add.png" alt="">
                                 </a>
                             </div>
@@ -147,6 +147,60 @@
               </div>
           </div>
       </main>
+
+
+      <!-- Modal -->
+            
+            <!-- Modal -->
+            <div class="modal fade" id="addItem" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Add Item</h5>
+                    </div>
+                    <div class="modal-body">
+                       <form>
+                        <div class="modalContent d-flex py-2">
+                            <label class="col-sm-2 col-form-label h6">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control shadow">
+                            </div>
+                        </div>
+                        <div class="modalContent d-flex py-2">
+                            <label class="col-sm-2 col-form-label h6">Image</label>
+                            <div class="col-sm-10">
+                                <input type="image" class="form-control shadow">
+                            </div>
+                        </div>
+                        <div class="modalContent d-flex py-2">
+                            <label class="col-sm-2 col-form-label h6">Price</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control shadow">
+                            </div>
+                        </div>
+                        <div class="modalContent d-flex py-2">
+                            <label class="col-sm-2 col-form-label h6">Price</label>
+                            <div class="col-sm-10">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                      Category
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Drink</a>
+                                      <a class="dropdown-item" href="#">Food</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                       </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+                </div>
+            </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
