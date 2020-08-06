@@ -39,7 +39,7 @@
                                 </a>
                             </div>
                             <div class="p-3 img-drop">
-                                <a href="#">
+                                <a href="#" data-toggle="modal" data-target="#addItem">
                                     <img src="assets/img/add.png" alt="">
                                 </a>
                             </div>
@@ -131,34 +131,12 @@
 
                         <div class="cart-title d-flex justify-content-center align-items-center">
                             <h2>Cart</h2>
-                            <span class="total-item rounded-circle ml-3">0</span>
+                            <span class="total-item rounded-circle ml-3">3</span>
                         </div>
                     </div>
                 
                         <div class="cart-content">
-
-                            <!-- <div class="empty text-center">
-                                <img class="rounded mx-auto d-block" src="assets/img/food-and-restaurant.png">
-                                <h3>Your cart is empty</h3>
-                                <p>Please add some items from the menu</p>
-                            </div> -->
-                            <!-- Grid-system -->
-                            <!-- <div class="row mx-1 mt-4 bg-dark">
-                                <div class="cart-item d-flex">
-                                    <div class="col-lg-5 col-md-6 bg-warning">
-                                        <img src="assets/img/bear-select.png" alt="">
-                                    </div>
-                                    <div class="col-lg-8 col-md-6 bg-success">
-                                        <h5>Coffee Latte</h5>
-                                        <div class="add-item d-flex mt-5">
-                                            <button type="button">-</button>
-                                            <input type="text" style="width: 20px;">
-                                            <button type="button">+</button>
-                                            <h6>Rp. 15.000</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+                
                             <!-- Cart item -->
                             <div class="cart-item d-flex">
                                 <div class="cart-img p-3">
@@ -217,8 +195,7 @@
                                     <span>Rp. 105.000*</span>
                                 </div>
                                 <p class="mt-2 mb-1">*Belum termasuk ppn</p>
-                                <button class="btn btn-two font-weight-bold py-2 mb-2 btn-block" data-toggle="modal"
-                                    data-target="#modalCheckout">
+                                <button class="btn btn-two font-weight-bold py-2 mb-2 btn-block" data-toggle="modal" data-target="#modalCheckout">
                                     Checkout
                                 </button>
                                 <a href="#" class="btn btn-one font-weight-bold py-2 btn-block">Cancel</a>
@@ -228,6 +205,109 @@
               </div>
           </div>
       </main>
+
+      <!-- Modal -->
+
+      <!-- Modal Add Item -->
+      <div class="modal fade" id="addItem" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Add Item</h5>
+            </div>
+            <div class="modal-body">
+               <form>
+                <div class="modalContent d-flex py-2">
+                    <label class="col-sm-2 col-form-label h6">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control shadow">
+                    </div>
+                </div>
+                <div class="modalContent d-flex py-2">
+                    <label class="col-sm-2 col-form-label h6">Image</label>
+                    <div class="col-sm-10">
+                        <input type="image" class="form-control shadow">
+                    </div>
+                </div>
+                <div class="modalContent d-flex py-2">
+                    <label class="col-sm-2 col-form-label h6">Price</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control shadow">
+                    </div>
+                </div>
+                <div class="modalContent d-flex py-2">
+                    <label class="col-sm-2 col-form-label h6">Price</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                              Category
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Drink</a>
+                              <a class="dropdown-item" href="#">Food</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Checkout -->
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modalCheckout">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-head d-flex justify-content-between">
+                        <h5 class="modal-title">Checkout</h5>
+                        <span class="h6">Receipt no: #010410919</span>
+                    </div>
+                    <small class="h6 mb-5">Cashier: Pevita Pearce</small>
+                        <div class="print-list mt-5">
+                            <div class="item-checkout">
+                                <span>Coffe Latte 1x</span>
+                                <span>Rp. 15.000</span>
+                            </div>
+                            <div class="item-checkout">
+                                <span>Black Forest 1x</span>
+                                <span>Rp. 30.000</span>
+                            </div>
+                            <div class="item-checkout">
+                                <span>Salmon Truffle Teriyaki 1x</span>
+                                <span>Rp. 60.000</span>
+                            </div>
+                            <div class="item-checkout">
+                                <span>PPN 10%</span>
+                                <span>Rp. 10.500</span>
+                            </div>
+                            <div class="float-right font-weight-bold font-15">
+                                Total: Rp. 115.500
+                            </div>
+                            <div class="clearfix"></div>
+                            <p class="font-weight-bold font-15">
+                                Payment: Cash
+                            </p>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="footer-btn align-items-center">
+                        <button type="button" class="btn print">Print</button>
+                        <p class="h6">Or</p>
+                        <button type="button" class="btn send">Send Email</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
