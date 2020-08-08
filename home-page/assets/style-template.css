@@ -28,6 +28,11 @@
     border-radius: 10px;
     width: 250px;
     height: 200px;
+    cursor: pointer;
+}
+
+.item-menu:hover {
+    opacity: 0.8;
 }
 
 
